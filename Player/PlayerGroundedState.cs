@@ -17,9 +17,9 @@ public class PlayerGroundedState : PlayerState // Use the Logic from PlayerState
     public override void Update()
     {
         base.Update();
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.Q))
             StateMachine.ChangeState(Player.CounterAttack);
-        if(Input.GetKeyDown(KeyCode.A))
+        if(Input.GetKeyDown(KeyCode.Mouse0))
             StateMachine.ChangeState(Player.PrimaryAttackState);
         if(!Player.IsGroundDetected())
             StateMachine.ChangeState(Player.AirState);

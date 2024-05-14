@@ -38,8 +38,10 @@ public class Entity : MonoBehaviour
     {
         FX = GetComponent<EntityFX>();
         Anim = GetComponentInChildren<Animator>();
+        
         // Get the Animator component with the way that search its Child. In Unity this script is attached to the Player
         // and Animator is just a Child component of the Player.
+        
         RB = GetComponent<Rigidbody2D>();// Get Rigid body itself only.
         
         //When you get this component, the you can call and use this component in transformation or rotate and so on. 
