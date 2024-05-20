@@ -6,10 +6,9 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
    public static PlayerManager Instance;
-   // "实例" in chiese.
-   // Named itseslf Instance.
+   // Named itself Instance.
    public Player Player;
-   // Initialize a Player and now this Player is in the PlayerManager called Instance.
+   // Initialize a Player and now this Player is in the PlayerManager which called Instance.
 
    private void Awake()
    {
